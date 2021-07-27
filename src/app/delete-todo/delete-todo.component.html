@@ -1,0 +1,8 @@
+<p>Delete-todo</p>
+
+<label for="text">Give Id to delete that Todo</label>
+      <div>
+        <input class= "margins-input" type="text" id="todoId" name="todoId" [(ngModel)]="todoId" placeholder="Enter ID" />
+      </div>
+      
+      <button class="button-style" id="create" (click)="ondeleteTodo()">delete</button>

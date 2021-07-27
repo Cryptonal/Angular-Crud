@@ -1,0 +1,27 @@
+<p>Update-Todo</p>
+
+
+<form class="add-form">
+
+    <div class="form-control margins-fields">
+        <label for="text">Update Todo at : </label>
+          <input class= "margins-input" type="text" id="todoid" name="todoid" [(ngModel)]="todoid" placeholder="Put ID" />
+      </div>
+
+    <div class="form-control margins-fields">
+      <label for="text">Created by</label>
+      <div>
+        <input class= "margins-input" type="text" id="createdBy" name="createdBy" [(ngModel)]="createdBy" placeholder="Enter Name" />
+      </div>
+    </div>
+  
+    <div class="form-control margins-fields">
+      <label for="day">Todo</label>
+      <div>
+        <input class= "margins-input" type="text" id="todo" name="todo" [(ngModel)]="todo" placeholder="Add Todo"/>
+      </div>
+    </div>
+  
+    <button class="button-style" id="create" (click)="updateTodo()">Update</button>
+
+  </form>

@@ -1,0 +1,29 @@
+<p>Show-todo</p>
+
+
+<h2>My Todos</h2>
+
+<table>
+  <thead>
+   <tr>
+    <th>Id</th>
+    <th>Created By</th>
+    <th>Description</th>
+    <th>Created Date</th>
+    <th></th>
+    <th></th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let todo of todos" >
+      <td>{{todo.id}}</td>
+      <td>{{todo.feedbackBy}}</td>
+      <td>{{todo.description}}</td>
+      
+      <td>{{todo.createdDate | date}}</td>
+      <td><a (click)="UpdateTodo()">edit</a></td>
+      <td><a  (click)="delTodo(todo.id)" >Delete</a></td>
+    </tr>
+
+  </tbody>
+</table>
